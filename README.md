@@ -1,6 +1,6 @@
 # grunt-umd
 
-Grunt task to surround JavaScript code with the [universal module definition](https://github.com/umdjs/umd/).
+Grunt task to surround JavaScript code with the [universal module definition](https://github.com/Unity-Billal-mesloub/umd/).
 
 ## Usage
 
@@ -24,7 +24,7 @@ grunt.initConfig({
 
         // optional, a template from templates subdir
         // can be specified by name (e.g. 'umd'); if missing, the templates/umd.hbs
-        // file will be used from [libumd](https://github.com/bebraw/libumd)
+        // file will be used from [libumd](https://github.com/Unity-Billal-mesloub/libumd)
         template: 'path/to/template.hbs',
 
         objectToExport: 'library', // optional, internal object that will be exported
@@ -55,7 +55,7 @@ grunt umd:all
 
 The following predefined [Handlebars](http://handlebarsjs.com/)-templates are available:
 
-* `umd` - the default template; the template is based on [umd/returnExports.js](https://github.com/umdjs/umd/blob/master/templates/returnExports.js)
+* `umd` - the default template; the template is based on [umd/returnExports.js](https://github.com/Unity-Billal-mesloub/umd/blob/main/templates/returnExports.js)
 * `unit` - the template that can be helpful to wrap standalone CommonJS/Node modules; it is slightly modified version of `umd` template;
     if `objectToExport` option is not specified then `module.exports` value will be used by default
 
@@ -74,20 +74,7 @@ You should see some `/output` after this. Study `Gruntfile.js` to understand how
 
 ## Contributors
 
-* [Alex Lawrence](https://github.com/alexlawrence) - Project founder, previous maintainer
-* [Juho Vepsäläinen](https://github.com/bebraw) - Handlerbars fixes etc., current maintainer
-* [Stéphane Bachelier](https://github.com/stephanebachelier) - Code indentation option
-* [Milan Adamovsky](https://github.com/adamovsky) - Enhanced configurability and Rails assets pipeline support
-* [Brian J. Miller](https://github.com/brianjmiller) - Indent only non-empty lines
-* [Denis](https://github.com/gamtiq) - Add default value for objectToExport and template option support
-* [Boris Cherny](https://github.com/eighttrackmind) - Properly export module IDs containing dashes to browser globals
-* [Paulo Gaspar](https://github.com/paulogaspar7) - Fix GitHub user name at repo and homepage URLs
-* [tomyouds](https://github.com/tomyouds) - Ignore indent option for empty lines
-* [Rameş Aliyev](https://github.com/ramesaliyev) - Browserify example
-* [Daniel Koch](https://github.com/dak0rn) - Fixed link to UMD template
-* [Louis Ameline](https://github.com/louisameline) - Made the `dest` property optional
-* [@timeiscoffee](https://github.com/timeiscoffee) - Updated `libumd` version. #35
+* [Billal mesloub](https://github.com/Unity-Billal-mesloub) - Project founder, previous maintainer
 
-## License
 
-MIT. See LICENSE for more info.
+
